@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #8900f2, #a100e9, #b400e1, #c400d9, #d100d1);
+}
+
+.container {
+  width: 690px;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+
+.wrapper {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #bbb;
+}
+
+.text-input .to-text {
+  border-left: 1px solid #bbb;
+  border-radius: 0px;
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.controls, 
+li, 
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+.controls .row.from .icons {
+  border-right: 1px solid #bbb;
+  padding-right: 15px;
+}
+
+.controls .row.to .icons {
+  border-left: 1px solid #bbb;
+  padding-left: 15px;
+}
+
+.controls .icons {
+  width: 38%;
+}
+
+.controls .icons i {
+  color: #9b9b9b;
+  font-size: 14px;
+  cursor: pointer;
+  width: 50px;
+  justify-content: center;
+}
+
+.icons i:hover {
+  color: #000000;
+}
+
+.controls .row select {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+}
+
+.controls .exchange {
+  color: #9b9b9b;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.exchange:hover {
+  color: #000000;
+}
+
+.container button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #8900f2;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 17px;
+  transition: .2s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+  }
+
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+
+  .text-input .to-text {
+    border-left: 0;
+    border-top: 1px solid #bbb;
+  }
+
+  .text-input textarea {
+    height: 200px;
+  }
+
+  .controls .row .icons {
+    display: none;
+  }
+
+  .controls .row select {
+    font-size: 16px;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+  }
+
+  .container button {
+    padding: 13px;
+    font-size: 16px;
+  }
+}
